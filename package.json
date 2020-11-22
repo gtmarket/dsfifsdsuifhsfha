@@ -1,0 +1,32 @@
+{
+  "name": "project-store",
+  "version": "0.0.1-beta",
+  "description": "A very nice marketplace website in building.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrAugu/project-store.git"
+  },
+  "author": "MrAugu#9016 & Phemus#6083",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrAugu/project-store/issues"
+  },
+  "homepage": "https://github.com/MrAugu/project-store#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "crypter": "git+https://github.com/MrAugu/crypter.git",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.16.2",
+    "helmet": "^3.18.0",
+    "memorystore": "^1.6.1",
+    "mongoose": "^5.6.3",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
