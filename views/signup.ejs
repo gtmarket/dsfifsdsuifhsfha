@@ -1,0 +1,23 @@
+<link rel="stylesheet" type="text/css" href="/assets/css/form.css">
+<% title = "Sign Up" %>
+<div class="container text-center">
+  <div class="userform">
+      <% if (alert) { %>
+        <p class="alert-fail"><%- alert %></p>
+        <% } %>
+        <h1 class="form-title">~ Sign Up ~</h1>
+          <hr>
+        <form method="POST">
+          <label for="email"><i class="fas fa-envelope"></i></label>
+          <input name="email" type="text" placeholder="E-mail">
+          <label for="username"><i class="fas fa-user"></i></label>
+          <input name="username" type="text" placeholder="Username">
+          <label for="password"><i class="fas fa-lock"></i></label>
+          <input name="password" type="password" placeholder="Password">
+          <label for="repeat-password"><i class="fas fa-lock"></i></label>
+          <input name="repeat-password" type="password" placeholder="Password">
+          <button type="submit">Sign Up</button>
+        </form>
+        <a id="v" href="/login#footer">Login?</a>
+  </div>
+</div>

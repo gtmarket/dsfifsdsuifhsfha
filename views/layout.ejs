@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= title %></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <p class="logo"><a href="/" id="brand"></a></p>
+           <nav>
+                <a href="#" class="hide-desktop"><i class="fas fa-bars menus menu-btn" id="menu"></i></a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><i class="fas fa-times exit-btn"></i></li>
+                    <li><a href="/">Home</a></li>
+                    <% if (!user) { %>
+                    <li><a href="/signup#footer">Sign Up</a></li>
+                    <% } else { %>
+                    <li><a href="/new">New Ad</a></li>
+                    <li><a href="/profile"><%= user.username %></a></li>
+                    <li><a href="/logout">Log Out</a></li>
+                    <% } %>
+                </ul>
+            </nav>
+        </header>
+            <section><br>
+                <h6 class="header-title">Growtopia Marketplace</h6>
+                <p class="header-subtitle">Find the item you need.</p>
+                <form action="/search" method="GET">
+                    <input type="search" class="header-input" name="name" placeholder="Enter a name..."><br>
+                    <button type="submit" class="header-btn">Search</button>
+                </form>
+            </section>
+    </div>
+    <%- body %>    
+    <script>
+            var d = document;
+            var menu = d.getElementById("menu");
+            var nav = d.getElementById("nav");
+            var exit = d.getElementById("exit");
+    
+            menu.addEventListener("click", (e) => {
+                nav.classList.toggle("hide-mobile");
+                menu.classList.toggle("hidden");
+                e.preventDefault();
+            });
+    
+            exit.addEventListener("click", (e) => {
+                nav.classList.toggle("hide-mobile");
+                menu.classList.toggle("hidden");
+                e.preventDefault();
+            });
+        </script>
+<div id="footer" class="footer">
+<p>Copyright &copy 2019 Project Store <br> All item contents and graphics owned by Ubisoft Entertainment®</p>
+</div>
+
+</body>
+</html>

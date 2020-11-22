@@ -1,0 +1,109 @@
+.userform form {
+  padding: 1em;
+  background: none;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  border-radius: 5px;
+  text-align: center;
+}
+  
+.userform form input {
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  height: 40px;
+  margin-top: 18px;
+  font-size: 15px;
+  background-color: #22222288;
+}
+
+.userform form input::placeholder {
+  color: #fff;
+}
+
+.userform form input:focus {
+  outline: none;
+}
+
+.userform form button {
+  width: 125px;
+  height: 35px;
+  border: none;
+  border-radius: 25px;
+  margin-top: 10px;
+  background-color: rgb(255, 208, 0);
+  
+}
+    
+.userform form button:hover {
+  background: rgb(206, 206, 13);
+  border: 1px solid black;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+    
+.userform label {
+  display: none;
+}
+    
+.userform input {
+  width: 100%;
+  padding: 0.7em;
+}
+
+.userform .form-title {
+  text-align: center;
+  color: #fff;
+}
+
+.container{
+  margin-top: 5%;
+  background-color: tomato;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.userform form a{
+  font-size: 15px;
+}
+
+.userform #v{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+.userform #v:hover{
+  background-color: white;
+  color: blueviolet;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+@media screen and (min-width: 310px) {
+  .userform label {
+    display: block;
+    float: left;
+    position: relative;
+    left: 6%;
+    top: 30px;
+    color: #fff;
+  }
+
+  .userform form input {
+    padding-left: 15%;
+    margin-top: 0px;
+  }
+}
